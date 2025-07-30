@@ -20,6 +20,15 @@ echo "=== NGINX CONF FILES ==="
 ls -l /etc/nginx/conf.d/
 ls -l /etc/nginx/sites-enabled/
 
+echo "=== NGINX MAIN CONFIG ==="
+cat /etc/nginx/nginx.conf
+
+echo "=== NGINX CONF DIR ==="
+ls -l /etc/nginx/conf.d/
+
+echo "=== SITES ENABLED ==="
+ls -l /etc/nginx/sites-enabled/
+
 # PHP-FPM（バックグラウンド）
 php-fpm -D
 
