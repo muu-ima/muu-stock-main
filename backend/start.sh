@@ -10,6 +10,13 @@ cat /etc/nginx/conf.d/default.conf
 echo "=== PUBLIC DIRECTORY ==="
 ls -al /var/www/html/public
 
+echo "=== ACCESS LOG ==="
+cat /var/log/nginx/access.log || echo "No access log"
+
+echo "=== ERROR LOG ==="
+cat /var/log/nginx/error.log || echo "No error log"
+
+
 # PHP-FPM（バックグラウンド）
 php-fpm -D
 
