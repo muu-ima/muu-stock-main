@@ -23,7 +23,7 @@ RUN composer install \
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 
 # Start スクリプト
-COPY ./backend/start.sh /start.sh
+COPY ./start.sh /start.sh
 RUN chmod +x /start.sh
 
 EXPOSE 80
